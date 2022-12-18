@@ -2,11 +2,9 @@
 
 int main()
 {
-    Homemade::Sound sound;
+    Homemade::Sound::Init();
 
-    sound.Init();
+    Homemade::Sound::Play("assets/jump.wav");
 
-    sound.Play("assets/jump.wav");
-
-    sound.Uninit();
+    Homemade::Sound::Uninit();
 }
